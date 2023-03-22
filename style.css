@@ -43,6 +43,7 @@
 }
 .new-header-top-menu-list-link {
     text-decoration: none;
+    color: #222222;
 }
 .new-header-top-menu-list-item {
     list-style: none;
@@ -108,6 +109,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 160%;
+    color: #222222;
 }
 .new-header-top-about-phone {
     position: relative;
@@ -131,6 +133,7 @@
     padding-right: 16px;
     margin-right: 20px;
     cursor: pointer;
+    color: #222222;
 }
 .new-header-top-about-shop::before {
     content: "";
@@ -140,6 +143,9 @@
     top: 9px;
     right: 0;
     background: url("Vector.png");
+}
+.new-header-top-about-socials-item {
+    text-decoration: none;
 }
 .new-header-top-about-socials-item:not(:last-child) {
     margin-right: 10px;
@@ -245,6 +251,12 @@
     display: flex;
     align-items: center;
 }
+.new-header-bottom-catalog-menu-item:hover span{
+    color: #AED4FF ;
+}
+.new-header-bottom-catalog-menu-item:hover .new-header-bottom-catalog-menu-item-image svg path{
+    fill: #AED4FF ;
+}
 .new-header-bottom-catalog-menu-item-image {
     margin-right: 20px;
 }
@@ -262,7 +274,7 @@
     cursor: pointer;
 }
 .new-header-bottom-sale {
-    background: #AED4FF;
+    background: #63ABFF;
     max-width: 159px;
     width: 100%;
     display: flex;
@@ -278,8 +290,19 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 160%;
+    color: #fff;
+}
+.new-header-bottom-sale:hover {
+    background: #AED4FF;
+}
+.new-header-bottom-sale:hover span {
     color: #257DE3;
 }
+.new-header-bottom-sale:hover .new-header-bottom-sale-image svg path {
+    fill:#257DE3;
+}
+
+
 .new-heder-mobile-burger,
 .new-heder-mobile-search {
     display: none;
@@ -400,7 +423,8 @@
 }
 .sale-window-button {
     display: block;
-    border: 1px solid #C2C2C2;
+    border: 1px solid #257DE3;
+    color: #257DE3;
     border-radius: 8px;
     padding: 17px 0;
     text-align: center;
@@ -413,6 +437,7 @@
     width: 100%;
     text-decoration: none;
 }
+
 .new-header-bottom-sale-main:hover>.new-header-bottom-sale-window {
     display: block;
 }
@@ -472,7 +497,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 13px;
-    line-height: 16px;
+    line-height: 19px;
 }
 .about-shop-window-phones {
     margin-bottom: 10px;
@@ -523,6 +548,9 @@
 }
 .catalog-menu-item-list {
     padding-left: 18px;
+}
+.catalog-menu-item-menu-item {
+    margin-bottom: 30px;
 }
 .catalog-menu-item-menu-item a,
 .catalog-menu-item-list-dropdown-item a {
@@ -634,7 +662,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    max-width: 320px;
+    width: 100%;
     display: none;
 }
 .header-burger-mobile.open {
@@ -649,7 +677,7 @@
 .header-burger-mobile__in {
     padding: 64px 0 30px 0;
     background: #257DE3;
-    max-width: 320px;
+    /* max-width: 320px; */
     width: 100%;
 }
 .mobile-catalog-menu-item {
@@ -671,6 +699,8 @@
 }
 .mobile-catalog-menu-item-image {
     margin-right: 12px;
+    width: 30px;
+    text-align: center;
 }
 .mobile-catalog-menu-item-image img {
     max-width: 32px;
@@ -698,7 +728,8 @@
 .mobile-phones-item-image {
     margin-right: 16px;
 }
-.mobile-phones-item-number span {
+.mobile-phones-item-number span,
+.mobile-phones-item-number a {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 13px;
@@ -721,7 +752,7 @@
 .glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;margin:0;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
 
 .modal-mobile-dropdown {
-    width: 320px;
+    width: 100%;
     background: #FFFFFF;
     position: absolute;
     top: 0;
@@ -761,6 +792,7 @@
 }
 .modal-mobile-slider-image {
     margin-bottom: 10px;
+    text-align: center;
 }
 .modal-mobile-slider-item span {
     text-align: center;
